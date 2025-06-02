@@ -1,0 +1,209 @@
+[
+  {
+    "program": "barrera",
+    "threads": 3,
+    "runs": 5,
+    "metrics": {
+      "tiempo": {
+        "avg": 0.0218,
+        "std": 0.003187
+      },
+      "latencia": {
+        "avg": 0.000107,
+        "std": 1.6e-05
+      },
+      "throughput": {
+        "avg": 9506.698,
+        "std": 1271.823473
+      },
+      "cpu": {
+        "avg": 89.8,
+        "std": 2.993326
+      }
+    }
+  },
+  {
+    "program": "barrera",
+    "threads": 30,
+    "runs": 5,
+    "metrics": {
+      "tiempo": {
+        "avg": 0.0174,
+        "std": 0.0028
+      },
+      "latencia": {
+        "avg": 8.5e-05,
+        "std": 1.4e-05
+      },
+      "throughput": {
+        "avg": 12010.562,
+        "std": 1598.556766
+      },
+      "cpu": {
+        "avg": 122.8,
+        "std": 4.621688
+      }
+    }
+  },
+  {
+    "program": "barrera",
+    "threads": 300,
+    "runs": 5,
+    "metrics": {
+      "tiempo": {
+        "avg": 0.026,
+        "std": 0.000894
+      },
+      "latencia": {
+        "avg": 0.000129,
+        "std": 5e-06
+      },
+      "throughput": {
+        "avg": 7768.248,
+        "std": 266.143644
+      },
+      "cpu": {
+        "avg": 148.4,
+        "std": 2.87054
+      }
+    }
+  },
+  {
+    "program": "espera",
+    "threads": 3,
+    "runs": 5,
+    "metrics": {
+      "tiempo": {
+        "avg": 0.0064,
+        "std": 0.00049
+      },
+      "latencia": {
+        "avg": 3.2e-05,
+        "std": 2e-06
+      },
+      "throughput": {
+        "avg": 31392.632,
+        "std": 1858.551672
+      },
+      "cpu": {
+        "avg": 170.4,
+        "std": 23.268863
+      }
+    }
+  },
+  {
+    "program": "espera",
+    "threads": 30,
+    "runs": 5,
+    "metrics": {
+      "tiempo": {
+        "avg": 0.0504,
+        "std": 0.015857
+      },
+      "latencia": {
+        "avg": 0.000249,
+        "std": 7.7e-05
+      },
+      "throughput": {
+        "avg": 4442.93,
+        "std": 1368.577544
+      },
+      "cpu": {
+        "avg": 684.2,
+        "std": 15.663971
+      }
+    }
+  },
+  {
+    "program": "espera",
+    "threads": 300,
+    "runs": 5,
+    "metrics": {
+      "tiempo": {
+        "avg": 0.2036,
+        "std": 0.071332
+      },
+      "latencia": {
+        "avg": 0.001004,
+        "std": 0.000352
+      },
+      "throughput": {
+        "avg": 1136.726,
+        "std": 423.445456
+      },
+      "cpu": {
+        "avg": 700.6,
+        "std": 51.662753
+      }
+    }
+  },
+  {
+    "program": "semaforo",
+    "threads": 3,
+    "runs": 5,
+    "metrics": {
+      "tiempo": {
+        "avg": 0.0194,
+        "std": 0.003072
+      },
+      "latencia": {
+        "avg": 9.5e-05,
+        "std": 1.5e-05
+      },
+      "throughput": {
+        "avg": 10821.71,
+        "std": 1622.889653
+      },
+      "cpu": {
+        "avg": 78.4,
+        "std": 2.727636
+      }
+    }
+  },
+  {
+    "program": "semaforo",
+    "threads": 30,
+    "runs": 5,
+    "metrics": {
+      "tiempo": {
+        "avg": 0.0118,
+        "std": 0.002713
+      },
+      "latencia": {
+        "avg": 5.8e-05,
+        "std": 1.2e-05
+      },
+      "throughput": {
+        "avg": 17987.606,
+        "std": 3068.546253
+      },
+      "cpu": {
+        "avg": 118.8,
+        "std": 3.1241
+      }
+    }
+  },
+  {
+    "program": "semaforo",
+    "threads": 300,
+    "runs": 5,
+    "metrics": {
+      "tiempo": {
+        "avg": 0.014,
+        "std": 0.0
+      },
+      "latencia": {
+        "avg": 6.8e-05,
+        "std": 1e-06
+      },
+      "throughput": {
+        "avg": 14636.86,
+        "std": 241.191396
+      },
+      "cpu": {
+        "avg": 150.2,
+        "std": 4.4
+      }
+    }
+  }
+]

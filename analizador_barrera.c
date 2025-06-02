@@ -4,6 +4,8 @@
 #include <ctype.h>
 #include <pthread.h>
 #include <stdint.h>
+#include <time.h>
+
 
 #define BUFFER 256                   
 
@@ -149,6 +151,7 @@ void leer_archivo(const char *nombre){
 }
 
 int main(int argc,char **argv){
+
     if (argc < 3){
         printf("Debe proporcionar el nombre del archivo y el numero de hilos\n");
         exit(EXIT_FAILURE);
@@ -180,6 +183,10 @@ int main(int argc,char **argv){
         pthread_create(&vec_h[i], NULL, trabajador, (void*) index);
     }
 
+    /*Medicion*/
+    struct timespec start, end;
+    clock_gettime(1, &start);
+
     /* produce datos */
     leer_archivo(argv[1]);
 
@@ -188,6 +195,12 @@ int main(int argc,char **argv){
     }
 
     /* resultados */
+    clock_gettime(1, &end);
+    double tiempo = (end.tv_sec - start.tv_sec) + (end.tv_nsec - start.tv_nsec)/1e9;
+    printf("Tiempo total: %.3f segundos\n", tiempo);
+    printf("Latencia: %.6f segundo/líneas\n", tiempo/(lin_efe + comenta));
+    printf("Throughput: %.2f líneas/segundo\n\n", (lin_efe + comenta) / tiempo);
+
     printf("Líneas efectivas : %ld\n", lin_efe);
     printf("Palabras clave   : %ld\n", key_word);
     printf("Comentarios      : %ld\n", comenta);
