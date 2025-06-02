@@ -51,3 +51,7 @@ sudo ./script.sh test10kb.txt
 
 # 5. Revisar el archivo de resultados generado
 cat resultados_test10kb.json
+
+#OPCIONAL Instalar (si no está presente) y abrir el monitor de GNOME
+sudo apt install gnome-system-monitor   # Para distribuciones Debian/Ubuntu
+gnome-system-monitor
