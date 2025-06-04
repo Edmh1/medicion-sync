@@ -24,7 +24,7 @@ Para cada archivo se experimenta con 3, 30 y 300 hilos.
 ## Métricas evaluadas
 - Tiempo total de ejecución  
 - Latencia por hilo  
-- Throughput (bytes procesados por segundo)  
+- Throughput (líneas procesados por segundo)  
 - Uso de CPU
 
 Cada combinación (archivo × hilos) se ejecuta **cinco veces** para obtener media y desviación estándar.
