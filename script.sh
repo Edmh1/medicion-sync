@@ -120,7 +120,7 @@ print(f"JSON generado → {json_out} \n")
 print(json.dumps(results, indent=2))
 PY
 
-# Limpieza temporal (comentar la línea siguiente si quieres conservar el CSV)
+# Limpieza temporal
 rm -f "$CSV_TMP"
 
-echo "\n✔ Pruebas completadas. Revisa $JSON_OUT para ver los promedios y desviaciones estándar."
+echo "\n Pruebas completadas. Revisa $JSON_OUT para ver los promedios y desviaciones estándar."

@@ -92,7 +92,6 @@ int cuenta_comentarios(const char *l){
 /* =========================================================
  *                 TRABAJO DE CADA HILO
  * =========================================================*/
-
 void* trabajador(void *arg){
     int id = *((int*)arg);
     free(arg);
@@ -134,7 +133,6 @@ void* trabajador(void *arg){
 /* =========================================================
  *                 PRODUCTOR  (hilo principal)
  * =========================================================*/
-
 void leer_archivo(const char *nombre){
     FILE *file = fopen(nombre, "r");
     if (!file) { perror("fopen"); exit(EXIT_FAILURE); }
